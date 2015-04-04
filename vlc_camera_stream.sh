@@ -1,3 +1,3 @@
 #!/bin/sh
 
-raspivid -o - -t 0 -n -w 640 -h 480 -fps 15 | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
+raspivid -o - -t 0 -n -w 640 -h 480 -fps 24 | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264

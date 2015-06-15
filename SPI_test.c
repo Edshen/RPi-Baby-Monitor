@@ -12,6 +12,7 @@ int main()
 	int SPI_channel = 0;
 	int SPI_speed = 32000000;
 	
+	// Page 21 of the MCP3008 describes a 3 byte simultaneous RW
 	int numSPIbytes = 3;
 	int dataLength = numSPIbytes*8;
 	unsigned char SPI_data[dataLength];
